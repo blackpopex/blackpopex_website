@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&family=Mochiy+Pop+One&family=Poppins&family=Slabo+27px&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  min-height: 100%;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.1;
+}
+
+h1,
+h2 {
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3,
+h4 {
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5,
+h6 {
+  margin-bottom: 0.5em;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.85rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+a,
+ul li {
+  font-size: 0.75rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1.05rem;
+  }
+  h6 {
+    font-size: 0.95rem;
+  }
+  .circular-dots li::before {
+    font-size: 1.4rem;
+  }
+  .circular-dots li::before {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p,
+ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 2.1rem;
+  }
+  p,
+a {
+    font-size: 0.85rem;
+  }
+  .circular-dots li::before {
+    font-size: 2.2rem;
+  }
+}
+.container {
+  width: min(90%, 90rem);
+  margin-inline: auto;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+  }
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.col-20,
+.col-25,
+.col-30,
+.col-33,
+.col-35,
+.col-40,
+.col-45,
+.col-50,
+.col-60,
+.col-70 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-20 {
+    width: 20%;
+  }
+  .col-25 {
+    width: 25%;
+  }
+  .col-30 {
+    width: 30%;
+  }
+  .col-33 {
+    width: 33%;
+  }
+  .col-35 {
+    width: 35%;
+  }
+  .col-40 {
+    width: 40%;
+  }
+  .col-45 {
+    width: 45%;
+  }
+  .col-50 {
+    width: 50%;
+  }
+  .col-60 {
+    width: 60%;
+  }
+  .col-70 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .col-70 {
+    width: 70%;
+  }
+}
+h1,
+h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 700;
+}
+
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+a,
+p,
+ul li,
+button {
+  font-family: "Slabo 27px", serif;
+  font-weight: 300;
+}/*# sourceMappingURL=main.css.map */

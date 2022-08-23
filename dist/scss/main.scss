@@ -1,0 +1,41 @@
+@import "boxshadow";
+@import "colors";
+@import "fontfamily";
+@import "fontweight";
+@import "reset";
+
+//********FOR VARIOUS DEVICE WIDTH*********//
+$mobile: 600px;
+$tablet: 768px;
+$landScape_tablet: 992px;
+$laptop: 1200px;
+$large_desktop: 1600px;
+
+//********FOR FAMILY FOR VARIOUS ELEMENT*********//
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1,
+h2 {
+  font-family: $Inter-fontFamily-h1-h2;
+  font-weight: $bold-font-weight;
+}
+h3 {
+  font-family: $Mochiy-fontFamily-h3;
+  font-weight: $next2-bold-font-weight;
+}
+h4,
+h5 {
+  font-family: $Poppins-fontFamily-h4-h5;
+  font-weight: $next2-bold-font-weight;
+}
+a,
+p,
+ul li,
+button {
+  font-family: $slabo-fontFamily-paragraph-links-button;
+  font-weight: $thin-font-weight;
+}
