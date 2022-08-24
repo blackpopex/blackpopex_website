@@ -31,6 +31,7 @@
     <script src="https://kit.fontawesome.com/12d9de5a0c.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
   </head>
   <body>
     <!--HEADER-HERO-CONTAINER-->
@@ -254,6 +255,8 @@
             <!---white background technical skill-->
             <div class="width-100 bg-white technical skills">
               <h5 class="text-navy-blue">Technical Skills</h5>
+              <!--------------------------slick slider -------------------------------->
+
               <div class="slick-container">
                 <div class="slick-slider">
                   <!--slide 1-->
@@ -403,6 +406,7 @@
           </div>
         </div>
       </section>
+      <!----------------------PORTFOLIO---------------------------->
       <section
         id="portfolio"
         class="position-relative"
@@ -497,6 +501,121 @@
           <div class="col-40 bg-grey" style="background-color: #f2f2f2"></div>
         </div>
       </section>
+
+      <section id="testimonials bg-img">
+        <div class="container">
+          <div class="testimonials-wrapper">
+            <div class="slick-slider-container">
+              <!--------------------------slick slider -------------------------------->
+              <div>
+                <div class="flex">
+                  <div class="img-wrapper col-30">
+                    <img
+                      src="./asset/testifiers/allef-vinicius-QHvtBAYVcfw-unsplash.jpg"
+                      alt="allef vinicius"
+                    />
+                  </div>
+                  <div class="comment col-70">
+                    <div>
+                      <h6 class="text-black">
+                        <iconify-icon icon="bxs:quote-alt-left"></iconify-icon>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Ipsam, corrupti molestias. Cum sit explicabo quas!
+                        Incidunt blanditiis pariatur sequi accusantium earum,
+                        eum autem? Accusantium a possimus dolore dolorem quis.
+                        Alias.
+                      </h6>
+                      <div class="faint-horizontal-line-width-50px"></div>
+                      <h6 class="text-navy-blue">Borris Moore</h6>
+                      <p>Director Westend Hospital</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer bg-img">
+        <div class="container">
+          <div class="flex">
+            <div class="form-container col-40">
+              <h2 class="text-white">I'm available for work, get in Touch</h2>
+              <form action="_php" method="post">
+                <div class="form-wrapper">
+                  <div class="flex">
+                    <div class="column-49">
+                      <input
+                        type="text"
+                        name="fullName"
+                        id="full_name"
+                        placeholder="Full Name"
+                      />
+                    </div>
+                    <div class="column-49">
+                      <input
+                        type="text"
+                        name="e_mail"
+                        id="email"
+                        placeholder="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="column-100">
+                    <textarea
+                      name="your_message"
+                      id="message"
+                      cols="10"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn border-green transparent">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="info-container col-60">
+              <div class="info-wrapper">
+                <div class="flex">
+                  <div class="box flex">
+                    <i class="fa fa-fw fa-envelope-o border-green"></i>
+                    <a href="#/" class="text-green">admin@blackpopex.com</a>
+                  </div>
+                  <div class="box flex">
+                    <i class="fa fa-fw fa-phone-alt border-green"></i>
+                    <div>
+                      <p>
+                        <a href="#/" class="text-green"
+                          >+234 (0) 806 847 0244,
+                        </a>
+                      </p>
+                      <p>
+                        <a href="#/" class="text-green"
+                          >+234 (0) 705 993 2224</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <p>
+                  <small>
+                    &copy;2022 blackpopex.com. All rights reserved.
+                  </small>
+                </p>
+
+                <p>
+                  <a href="#/" target="_blank">
+                    Designed & Built by
+                    <span class="text-green">Blackpopex</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
     <!---------------------------------------JAVASCRIPT LINK------------------------------------------------->
     <script src="./js/main.js"></script>
