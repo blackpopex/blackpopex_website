@@ -168,7 +168,7 @@ ul li {
   p,
 .circular-dots,
 a {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
   .circular-dots li::before {
     font-size: 2.2rem;
@@ -332,11 +332,7 @@ button {
 
 .faint-horizontal-line {
   border: 1px solid #f2f2f2;
-}
-
-.intenship .logo-wrapper img {
-  max-width: 100px;
-  margin-inline: 0 auto;
+  margin: 0.5em 0;
 }
 
 .column-30 {
@@ -626,4 +622,98 @@ nav #menu li a.active {
   #about_me .flex .col-80 {
     padding: 3em 0;
   }
+}
+#Resume {
+  padding: 0;
+  margin: 0;
+}
+#Resume .flex {
+  align-items: flex-start;
+}
+#Resume .flex .container {
+  width: min(85%, 90rem);
+  margin-inline: auto;
+  padding: 3em 0;
+}
+#Resume .flex .school-attended {
+  margin-bottom: 2em;
+}
+#Resume .flex .school-attended h5 {
+  margin-bottom: 0;
+}
+#Resume .flex .school-attended h6 {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+#Resume .flex .school-attended .text-green {
+  margin-bottom: 0;
+}
+#Resume .work-experience {
+  margin-top: 1em;
+}
+#Resume .work-experience h5.text-navy-blue {
+  margin-bottom: 0.75em;
+}
+#Resume .work-experience .intenship {
+  margin-bottom: 0.25em;
+  padding: 1em;
+  width: 100%;
+  max-width: 600px;
+}
+#Resume .work-experience .intenship .logo-wrapper img {
+  max-width: 300px;
+  margin-inline: 0 auto;
+  margin-bottom: 0.25em;
+}
+#Resume .work-experience .intenship h6.bold-font {
+  font-weight: 600;
+}
+#Resume .work-experience .intenship h6.tiny-text {
+  line-height: 1.2;
+  margin-bottom: 0.75em;
+}
+#Resume .work-experience .intenship .date-of-intenship li {
+  color: #354555;
+}
+#Resume .work-experience .intenship .date-of-intenship li::after {
+  content: "|";
+  font-size: 0.75rem;
+  padding-inline: 0.5em;
+}
+#Resume .work-experience .intenship .date-of-intenship li:last-child::after {
+  content: "";
+}
+#Resume .slick-container {
+  margin-top: 1em;
+}
+#Resume .slick-container .slick-slider {
+  width: 100%;
+}
+#Resume .slick-container .flex {
+  flex-direction: row;
+}
+#Resume .slick-container .flex img {
+  width: 22.5%;
+  max-width: 90px;
+  margin-bottom: 1em;
+}
+#Resume .certification-wrapper {
+  width: 100%;
+}
+#Resume .certification-wrapper .credential {
+  margin-bottom: 0.75em;
+}
+#Resume .certification-wrapper .credential h6:first-child {
+  margin-bottom: 0.2em;
+  font-family: "Slabo 27px", serif;
+}
+#Resume .certification-wrapper .credential h6:last-child {
+  margin-bottom: 0.5em;
+}
+#Resume .certification-wrapper .credential h6 {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+#Resume .certification-wrapper .credential .column-30 {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

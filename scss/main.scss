@@ -84,13 +84,9 @@ button {
 }
 .faint-horizontal-line {
   border: 1px solid $next-primary-color;
+  margin: 0.5em 0;
 }
-.intenship {
-  .logo-wrapper img {
-    max-width: 100px;
-    margin-inline: $left_inline-auto;
-  }
-}
+
 .column-30 {
   width: 30%;
 }
@@ -408,3 +404,100 @@ nav {
 }
 
 //RESUME SECTION
+#Resume {
+  padding: 0;
+  margin: 0;
+  .flex {
+    align-items: flex-start;
+    .container {
+      width: min(85%, 90rem);
+      margin-inline: $inline;
+      padding: 3em 0;
+    }
+    .school-attended {
+      margin-bottom: 2em;
+
+      h5 {
+        margin-bottom: 0;
+      }
+      h6 {
+        margin-bottom: 0;
+        font-weight: 300;
+      }
+      .text-green {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .work-experience {
+    margin-top: 1em;
+    h5.text-navy-blue {
+      margin-bottom: 0.75em;
+    }
+    .intenship {
+      margin-bottom: 0.25em;
+      padding: 1em;
+      width: $Width_100;
+      max-width: 600px;
+
+      .logo-wrapper img {
+        max-width: 300px;
+        margin-inline: $left_inline-auto;
+        margin-bottom: 0.25em;
+      }
+      h6.bold-font {
+        font-weight: $next3-bold-font-weight;
+      }
+      h6.tiny-text {
+        line-height: 1.2;
+        margin-bottom: 0.75em;
+      }
+      .date-of-intenship li {
+        color: $primary-color;
+      }
+      .date-of-intenship li::after {
+        content: "|";
+        font-size: 0.75rem;
+        padding-inline: 0.5em;
+      }
+      .date-of-intenship li:last-child::after {
+        content: "";
+      }
+    }
+  }
+  .slick-container {
+    margin-top: 1em;
+    .slick-slider {
+      width: $Width_100;
+    }
+    .flex {
+      flex-direction: row;
+      img {
+        width: 22.5%;
+        max-width: 90px;
+        margin-bottom: 1em;
+      }
+    }
+  }
+  .certification-wrapper {
+    width: $Width_100;
+    .credential {
+      margin-bottom: 0.75em;
+      h6:first-child {
+        margin-bottom: 0.2em;
+        font-family: $slabo-fontFamily-paragraph-links-button;
+      }
+      h6:last-child {
+        margin-bottom: 0.5em;
+      }
+      h6 {
+        margin-bottom: 0;
+        line-height: 1.2;
+      }
+      .column-30 {
+        width: 100%;
+      }
+    }
+  }
+}
