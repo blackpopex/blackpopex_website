@@ -39,12 +39,12 @@ h2,
 h3,
 h4,
 h5 {
-  line-height: 1.1;
+  line-height: 1;
 }
 
 h1,
 h2 {
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
 }
 
 h1 {
@@ -57,7 +57,7 @@ h2 {
 
 h3,
 h4 {
-  margin-bottom: 0.6em;
+  margin-bottom: 0.5em;
 }
 
 h3 {
@@ -70,7 +70,7 @@ h4 {
 
 h5,
 h6 {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 h5 {
@@ -87,8 +87,14 @@ a {
 
 p,
 a,
+.circular-dots,
 ul li {
   font-size: 0.75rem;
+}
+
+.circular-dots li {
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 ul {
@@ -147,7 +153,7 @@ ul li {
 }
 @media (min-width: 1600px) {
   h1 {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
   h2 {
     font-size: 2.3rem;
@@ -156,6 +162,7 @@ ul li {
     font-size: 2.1rem;
   }
   p,
+.circular-dots,
 a {
     font-size: 0.85rem;
   }
@@ -214,7 +221,8 @@ button {
 .col-45,
 .col-50,
 .col-60,
-.col-70 {
+.col-70,
+.col-80 {
   width: 100%;
 }
 
@@ -249,10 +257,16 @@ button {
   .col-70 {
     width: 100%;
   }
+  .col-80 {
+    width: 100%;
+  }
 }
 @media (min-width: 992px) {
   .col-70 {
     width: 70%;
+  }
+  .col-80 {
+    width: 80%;
   }
 }
 h1,
@@ -278,4 +292,271 @@ ul li,
 button {
   font-family: "Slabo 27px", serif;
   font-weight: 300;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-green {
+  color: #1f9588;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-navy-blue {
+  color: #354555;
+}
+
+.bg-grey {
+  background-color: #f2f2f2;
+}
+
+.bg-green {
+  background-color: #1f9588;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.faint-horizontal-line {
+  border: 1px solid #f2f2f2;
+}
+
+.intenship .logo-wrapper img {
+  max-width: 100px;
+  margin-inline: 0 auto;
+}
+
+.column-30 {
+  width: 30%;
+}
+
+.inline-block li {
+  display: inline-block;
+}
+
+.herotext-wrapper a.btn {
+  padding: 0.5em 2em;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+}
+
+.hearder-hero-main-wrapper {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../asset/header/bg-img-blackpopex-mobile.jpg");
+  min-height: 100px;
+}
+
+#navba_hero_container .navbar-wrapper .flex {
+  flex-direction: row;
+}
+#navba_hero_container #blackpopex_logo {
+  max-width: 200px;
+  width: auto;
+  margin-left: -2em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #354555;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  min-height: 6vh;
+  padding: 0.5em 1em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+nav .hamburger-menu {
+  cursor: pointer;
+  display: block;
+  width: auto;
+  margin-inline: auto;
+}
+nav .span {
+  height: 4px;
+  margin-bottom: 6px;
+  background-color: #1f9588;
+  border-radius: 16px;
+  transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
+nav .span:last-child {
+  margin-bottom: 0;
+}
+nav .bar1 {
+  width: 40px;
+}
+nav .bar2 {
+  width: 35px;
+}
+nav .bar3 {
+  width: 30px;
+}
+nav .change .bar1 {
+  transform: translateX(-10px);
+}
+nav .change .bar2 {
+  opacity: 0;
+  margin-bottom: 2px;
+}
+nav .change .bar3 {
+  transform: translateX(10px);
+}
+nav .navbarLinks {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 6vh;
+  width: 0;
+  min-height: 94vh;
+  background-color: #354555;
+  z-index: 1;
+  padding-top: 2em;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  transition: width 1s ease-in-out, right 0.5s ease-in-out;
+}
+nav .increase-width {
+  width: 260px;
+}
+@media (min-width: 600px) {
+  nav .increase-width {
+    width: 300px;
+  }
+}
+nav #menu {
+  width: 100%;
+}
+nav #menu li {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+nav #menu li a {
+  padding: 8px 8px 8px 32px;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+nav #menu li a.active {
+  color: #1f9588;
+}
+
+@media (min-width: 768px) {
+  #navba_hero_container #blackpopex_logo {
+    width: 30%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: inherit;
+    bottom: auto;
+    left: auto;
+    width: 70%;
+    max-width: auto;
+    z-index: 2;
+    min-height: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+  nav .hamburger-menu {
+    display: none;
+  }
+  nav .navbarLinks {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: auto;
+    margin-inline: auto 0;
+    min-height: auto;
+    background-color: inherit;
+    z-index: 1;
+    padding-top: 0;
+    box-shadow: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: block;
+  }
+  nav #menu {
+    width: 100%;
+    margin-left: auto 0;
+  }
+  nav #menu li {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0;
+  }
+  nav #menu li a {
+    padding: 1em 0.5em;
+    font-size: 1.1em;
+    font-weight: 400;
+  }
+}
+@media (min-width: 992px) {
+  .hearder-hero-main-wrapper {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../asset/header/background-hero-image.jpg");
+    min-height: -150px;
+    margin-top: -35px;
+  }
+  #navba_hero_container #blackpopex_logo {
+    width: 30%;
+  }
+  nav #menu li {
+    margin-right: 1em;
+  }
+  nav #menu li a {
+    padding: 1em 0.5em;
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 1200px) {
+  #navba_hero_container #blackpopex_logo {
+    max-width: 240px;
+  }
+  .hearder-hero-main-wrapper {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: auto;
+    margin-top: 0;
+  }
+  nav #menu li {
+    margin-right: 1.25em;
+  }
+  nav #menu li a {
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 1600px) {
+  #navba_hero_container #blackpopex_logo {
+    max-width: 300px;
+  }
+  nav #menu li {
+    margin-right: 1.5em;
+  }
+  nav #menu li a {
+    font-size: 1.4em;
+  }
 }/*# sourceMappingURL=main.css.map */

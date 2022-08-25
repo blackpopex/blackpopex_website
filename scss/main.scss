@@ -11,12 +11,30 @@ $landScape_tablet: 992px;
 $laptop: 1200px;
 $large_desktop: 1600px;
 
+//********OTHER VARIABLES*********//
+$Width_100: 100%;
+$inline-block: inline-block;
+$left_inline-auto: 0 auto;
+$right_inline-auto: auto 0;
+$inline: auto;
+
 //********FOR FAMILY FOR VARIOUS ELEMENT*********//
 
 @mixin flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@mixin background-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@mixin btn {
+  padding: 0.5em 2em;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
 }
 h1,
 h2 {
@@ -38,4 +56,276 @@ ul li,
 button {
   font-family: $slabo-fontFamily-paragraph-links-button;
   font-weight: $thin-font-weight;
+}
+
+.text-black {
+  color: $black-color;
+}
+.text-green {
+  color: $green-color;
+}
+.text-white {
+  color: $white-color;
+}
+.text-navy-blue {
+  color: $primary-color;
+}
+.bg-grey {
+  background-color: $next-primary-color;
+}
+.bg-green {
+  background-color: $green-color;
+}
+.bg-white {
+  background-color: $white-color;
+}
+.text-left {
+  text-align: left;
+}
+.faint-horizontal-line {
+  border: 1px solid $next-primary-color;
+}
+.intenship {
+  .logo-wrapper img {
+    max-width: 100px;
+    margin-inline: $left_inline-auto;
+  }
+}
+.column-30 {
+  width: 30%;
+}
+
+.inline-block li {
+  display: $inline-block;
+}
+
+.herotext-wrapper {
+  a.btn {
+    @include btn;
+  }
+}
+
+//OTHER SASS CODES
+.hearder-hero-main-wrapper {
+  @include background-image;
+  background-image: url("../asset/header/bg-img-blackpopex-mobile.jpg");
+  min-height: 100px;
+}
+#navba_hero_container {
+  .navbar-wrapper .flex {
+    flex-direction: row;
+  }
+  #blackpopex_logo {
+    max-width: 200px;
+    width: auto;
+    margin-left: -2em;
+  }
+}
+nav {
+  @include flex;
+  position: fixed;
+  background-color: $primary-color;
+  bottom: 0;
+  left: 0;
+  width: $Width_100;
+  z-index: 2;
+  min-height: 6vh;
+  padding: 0.5em 1em;
+  box-shadow: $next-box-shadow;
+
+  .hamburger-menu {
+    cursor: pointer;
+    display: block;
+    width: auto;
+    margin-inline: $inline;
+  }
+  .span {
+    height: 4px;
+    margin-bottom: 6px;
+    background-color: $green-color;
+    border-radius: 16px;
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+  }
+  .span:last-child {
+    margin-bottom: 0;
+  }
+  .bar1 {
+    width: 40px;
+  }
+  .bar2 {
+    width: 35px;
+  }
+  .bar3 {
+    width: 30px;
+  }
+  .change .bar1 {
+    transform: translateX(-10px);
+  }
+  .change .bar2 {
+    opacity: 0;
+    margin-bottom: 2px;
+  }
+  .change .bar3 {
+    transform: translateX(10px);
+  }
+  .navbarLinks {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 6vh;
+    width: 0;
+    min-height: 94vh;
+    background-color: $primary-color;
+    z-index: 1;
+    padding-top: 2em;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    transition: width 1s ease-in-out, right 0.5s ease-in-out;
+  }
+  .increase-width {
+    width: 260px;
+  }
+
+  @media (min-width: $mobile) {
+    .increase-width {
+      width: 300px;
+    }
+  }
+  #menu {
+    width: $Width_100;
+  }
+  #menu li {
+    display: block;
+    width: $Width_100;
+    margin-bottom: 1.5em;
+  }
+  #menu li a {
+    padding: 8px 8px 8px 32px;
+    font-size: 1.5em;
+    color: $white-color;
+  }
+  #menu li a.active {
+    color: $green-color;
+  }
+}
+
+@media (min-width: $tablet) {
+  #navba_hero_container {
+    #blackpopex_logo {
+      width: 30%;
+    }
+  }
+  nav {
+    @include flex;
+    position: relative;
+    background-color: inherit;
+    bottom: auto;
+    left: auto;
+    width: 70%;
+    max-width: auto;
+    z-index: 2;
+    min-height: auto;
+    padding: 0;
+    box-shadow: none;
+
+    .hamburger-menu {
+      display: none;
+    }
+
+    .navbarLinks {
+      position: relative;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      width: auto;
+      margin-inline: $right_inline-auto;
+      min-height: auto;
+      background-color: inherit;
+      z-index: 1;
+      padding-top: 0;
+      box-shadow: none;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      display: block;
+    }
+    #menu {
+      width: $Width_100;
+      margin-left: $right_inline-auto;
+    }
+
+    #menu li {
+      display: inline-block;
+      width: auto;
+      margin-bottom: 0;
+    }
+    #menu li a {
+      padding: 1em 0.5em;
+      font-size: 1.1em;
+      font-weight: $half-bold-font-weight;
+    }
+  }
+}
+
+@media (min-width: $landScape_tablet) {
+  .hearder-hero-main-wrapper {
+    @include background-image;
+    background-image: url("../asset/header/background-hero-image.jpg");
+    min-height: -150px;
+    margin-top: -35px;
+  }
+  #navba_hero_container {
+    #blackpopex_logo {
+      width: 30%;
+    }
+  }
+
+  nav {
+    #menu li {
+      margin-right: 1em;
+    }
+    #menu li a {
+      padding: 1em 0.5em;
+      font-size: 1.1em;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  #navba_hero_container {
+    #blackpopex_logo {
+      max-width: 240px;
+    }
+  }
+  .hearder-hero-main-wrapper {
+    @include background-image;
+    min-height: auto;
+    margin-top: 0;
+  }
+  nav {
+    #menu li {
+      margin-right: 1.25em;
+    }
+    #menu li a {
+      font-size: 1.25em;
+    }
+  }
+}
+@media (min-width: $large_desktop) {
+  #navba_hero_container {
+    #blackpopex_logo {
+      max-width: 300px;
+    }
+  }
+
+  nav {
+    #menu li {
+      margin-right: 1.5em;
+    }
+    #menu li a {
+      font-size: 1.4em;
+    }
+  }
 }
