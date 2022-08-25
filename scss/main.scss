@@ -329,3 +329,82 @@ nav {
     }
   }
 }
+.herotext-wrapper {
+  max-width: 600px;
+  margin-inline: $left_inline-auto;
+  h5 {
+    margin-bottom: 0.25em;
+  }
+  h1 {
+    margin-bottom: 0.2em;
+    line-height: 0.8;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: $tablet) {
+  .herotext-wrapper {
+    max-width: 500px;
+  }
+}
+@media (min-width: $laptop) {
+  .herotext-wrapper {
+    max-width: 600px;
+  }
+}
+@media (min-width: $large_desktop) {
+  .herotext-wrapper {
+    max-width: 650px;
+  }
+}
+
+//ABOUT_ME
+
+#about_me {
+  padding: 0;
+  margin: 0;
+
+  .flex {
+    margin-bottom: 10px;
+    .col-20 {
+      .container {
+        width: min(40%, 40rem);
+        margin-inline: $inline;
+      }
+      img {
+        max-width: 500px;
+        width: 100%;
+        margin: 2em 0;
+      }
+    }
+    .col-80 {
+      padding: 3em 0;
+      margin-bottom: 0;
+    }
+    .col-80 {
+      .container {
+        width: min(85%, 80rem);
+        margin-inline: $inline;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  #about_me {
+    .flex {
+      .col-20 {
+        img {
+          margin: 0;
+        }
+      }
+      .col-80 {
+        padding: 3em 0;
+      }
+    }
+  }
+}
+
+//RESUME SECTION
