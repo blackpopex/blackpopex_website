@@ -274,7 +274,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Mochiy Pop One", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
 }
 
@@ -808,4 +808,170 @@ nav #menu li a.active {
   #Resume .certification-wrapper .credential .column-70 {
     width: 70%;
   }
+}
+#testimonials {
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../asset/testimonials-bg-img-icon/testimonials-mobile.jpg");
+  min-height: 200px;
+  width: 100%;
+  background-size: contain;
+}
+#testimonials .slick-slider-container {
+  width: 100%;
+}
+#testimonials .slick-slider-container .flex .img-wrapper {
+  width: 100%;
+  max-width: 300px;
+  margin-inline: auto;
+  margin-bottom: 1em;
+}
+#testimonials .slick-slider-container .flex .img-wrapper img {
+  max-width: 120px;
+  height: 120px;
+  margin-inline: auto;
+  border-radius: 50%;
+}
+#testimonials .slick-slider-container .flex .comment {
+  width: 100%;
+  max-width: 600px;
+}
+#testimonials .slick-slider-container .flex .comment iconify-icon {
+  font-size: 2em;
+  padding-right: 0.5em;
+  color: #354555;
+}
+#testimonials .slick-slider-container .flex .comment h6.text-navy-blue {
+  font-style: italic;
+  font-weight: 300;
+}
+#testimonials .slick-slider-container .flex .comment .faint-horizontal-line-width-50px {
+  border: 1px solid #ececec;
+  margin: 0.5em 0;
+  width: 40%;
+  max-width: 200px;
+}
+#testimonials .slick-slider-container .flex .comment h6.normal-font-style {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 600;
+}
+#testimonials .slick-slider-container .flex .comment p {
+  color: #354555;
+}
+
+@media (min-width: 768px) {
+  #testimonials {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../asset/testimonials-bg-img-icon/testimonials.jpg");
+    background-size: contain;
+  }
+  #testimonials .slick-slider-container .flex {
+    align-items: flex-start;
+  }
+  #testimonials .slick-slider-container .flex .img-wrapper {
+    width: 20%;
+    margin-inline: auto;
+    margin-bottom: 0;
+  }
+  #testimonials .slick-slider-container .flex .img-wrapper img {
+    max-width: 100px;
+    height: 100px;
+    margin-inline: 0 auto;
+    margin-top: 1em;
+  }
+  #testimonials .slick-slider-container .flex .comment {
+    width: 80%;
+    max-width: 650px;
+  }
+  #testimonials .slick-slider-container .flex .comment iconify-icon {
+    padding-right: 0.25em;
+  }
+  #testimonials .slick-slider-container .flex .comment .faint-horizontal-line-width-50px {
+    max-width: 150px;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials {
+    padding: 2.5em 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #testimonials .slick-slider-container .flex .img-wrapper {
+    width: 20%;
+  }
+  #testimonials .slick-slider-container .flex .img-wrapper img {
+    max-width: 130px;
+    height: 130px;
+    margin-top: 1em;
+  }
+  #testimonials .slick-slider-container .flex .comment {
+    width: 80%;
+    max-width: 900px;
+  }
+  #testimonials .slick-slider-container .flex .comment iconify-icon {
+    padding-right: 0.25em;
+  }
+}
+@media (min-width: 1200px) {
+  #testimonials {
+    padding: 2em 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #testimonials .slick-slider-container {
+    width: 100%;
+    margin-inline: 0 auto;
+  }
+  #testimonials .slick-slider-container .flex img {
+    max-width: 140px;
+    height: 140px;
+  }
+  #testimonials .slick-slider-container .comment {
+    width: 80%;
+    margin-inline: auto 0;
+  }
+  #testimonials .slick-slider-container .comment iconify-icon {
+    padding-right: 0.25em;
+  }
+}
+@media (min-width: 1600px) {
+  #testimonials {
+    padding: 2em 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+  }
+  #testimonials .slick-slider-container {
+    width: 100%;
+    margin-inline: 0 auto;
+  }
+  #testimonials .slick-slider-container .flex img {
+    max-width: 180px;
+    height: 180px;
+  }
+  #testimonials .slick-slider-container .comment {
+    width: 80%;
+    margin-inline: 0 auto;
+  }
+  #testimonials .slick-slider-container .comment iconify-icon {
+    padding-right: 0.25em;
+  }
+}
+#footer {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../asset/footer/footer.jpg");
 }/*# sourceMappingURL=main.css.map */

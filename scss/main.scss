@@ -42,7 +42,7 @@ h2 {
   font-weight: $bold-font-weight;
 }
 h3 {
-  font-family: $Mochiy-fontFamily-h3;
+  font-family: $Inter-fontFamily-h1-h2;
   font-weight: $next2-bold-font-weight;
 }
 h4,
@@ -639,4 +639,178 @@ nav {
       }
     }
   }
+}
+//TESTIMONIALS
+#testimonials {
+  padding: 0;
+  margin: 0;
+  @include background-image;
+  background-image: url("../asset/testimonials-bg-img-icon/testimonials-mobile.jpg");
+  min-height: 200px;
+  width: $Width_100;
+  background-size: contain;
+  .slick-slider-container {
+    width: $Width_100;
+    .flex {
+      .img-wrapper {
+        width: $Width_100;
+        max-width: 300px;
+        margin-inline: $inline;
+        margin-bottom: 1em;
+        img {
+          max-width: 120px;
+          height: 120px;
+          margin-inline: $inline;
+          border-radius: 50%;
+        }
+      }
+      .comment {
+        width: $Width_100;
+        max-width: 600px;
+        iconify-icon {
+          font-size: 2em;
+          padding-right: 0.5em;
+          color: $primary-color;
+        }
+        h6.text-navy-blue {
+          font-style: italic;
+          font-weight: 300;
+        }
+        .faint-horizontal-line-width-50px {
+          border: 1px solid $next-primary-color;
+          margin: 0.5em 0;
+          width: 40%;
+          max-width: 200px;
+        }
+        h6.normal-font-style {
+          margin-bottom: 0;
+          font: {
+            style: normal;
+            weight: $next3-bold-font-weight;
+          }
+        }
+        p {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  #testimonials {
+    @include background-image;
+    background-image: url("../asset/testimonials-bg-img-icon/testimonials.jpg");
+    background-size: contain;
+    .slick-slider-container {
+      .flex {
+        align-items: flex-start;
+        .img-wrapper {
+          width: 20%;
+          margin-inline: $inline;
+          margin-bottom: 0;
+          img {
+            max-width: 100px;
+            height: 100px;
+            margin-inline: $left_inline-auto;
+            margin-top: 1em;
+          }
+        }
+        .comment {
+          width: 80%;
+          max-width: 650px;
+          iconify-icon {
+            padding-right: 0.25em;
+          }
+
+          .faint-horizontal-line-width-50px {
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  #testimonials {
+    padding: 2.5em 0;
+    @include background-image;
+    background-size: cover;
+    .slick-slider-container {
+      .flex {
+        .img-wrapper {
+          width: 20%;
+
+          img {
+            max-width: 130px;
+            height: 130px;
+            margin-top: 1em;
+          }
+        }
+        .comment {
+          width: 80%;
+          max-width: 900px;
+          iconify-icon {
+            padding-right: 0.25em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  #testimonials {
+    padding: 2em 0;
+    @include background-image;
+    background-size: contain;
+    .slick-slider-container {
+      width: $Width_100;
+      margin-inline: $left_inline-auto;
+      .flex {
+        img {
+          max-width: 140px;
+          height: 140px;
+        }
+      }
+      .comment {
+        width: 80%;
+        margin-inline: $right_inline-auto;
+        iconify-icon {
+          padding-right: 0.25em;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $large_desktop) {
+  #testimonials {
+    padding: 2em 0;
+    @include background-image;
+    background-size: contain;
+    height: 500px;
+    .slick-slider-container {
+      width: $Width_100;
+      margin-inline: $left_inline-auto;
+      .flex {
+        img {
+          max-width: 180px;
+          height: 180px;
+        }
+      }
+      .comment {
+        width: 80%;
+        margin-inline: $left_inline-auto;
+        iconify-icon {
+          padding-right: 0.25em;
+        }
+      }
+    }
+  }
+}
+
+//FOOTER
+#footer {
+  @include background-image;
+  background-image: url("../asset/footer/footer.jpg");
 }
