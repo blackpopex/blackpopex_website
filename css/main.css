@@ -121,9 +121,6 @@ ul {
   h5 {
     font-size: 1.05rem;
   }
-  h6 {
-    font-size: 0.95rem;
-  }
   .circular-dots li::before {
     font-size: 1.4rem;
   }
@@ -146,9 +143,6 @@ ul {
   }
   h5 {
     font-size: 1.1rem;
-  }
-  h6 {
-    font-size: 1rem;
   }
   p,
 ul li {
@@ -298,6 +292,10 @@ button {
   font-weight: 300;
 }
 
+.text-grey {
+  color: #ececec;
+}
+
 .text-black {
   color: #000000;
 }
@@ -315,7 +313,7 @@ button {
 }
 
 .bg-grey {
-  background-color: #f2f2f2;
+  background-color: #ececec;
 }
 
 .bg-green {
@@ -331,7 +329,7 @@ button {
 }
 
 .faint-horizontal-line {
-  border: 1px solid #f2f2f2;
+  border: 1px solid #ececec;
   margin: 0.5em 0;
 }
 
@@ -688,14 +686,17 @@ nav #menu li a.active {
 }
 #Resume .slick-container .slick-slider {
   width: 100%;
+  max-width: 600px;
 }
 #Resume .slick-container .flex {
   flex-direction: row;
 }
 #Resume .slick-container .flex img {
-  width: 22.5%;
-  max-width: 90px;
+  width: 25%;
+  max-width: 80px;
   margin-bottom: 1em;
+  display: block;
+  margin-right: auto 0;
 }
 #Resume .certification-wrapper {
   width: 100%;
@@ -705,10 +706,12 @@ nav #menu li a.active {
 }
 #Resume .certification-wrapper .credential h6:first-child {
   margin-bottom: 0.2em;
-  font-family: "Slabo 27px", serif;
+  font-family: "Inter", sans-serif;
 }
 #Resume .certification-wrapper .credential h6:last-child {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
+  color: #1f9588;
+  font-weight: 400;
 }
 #Resume .certification-wrapper .credential h6 {
   margin-bottom: 0;
@@ -716,4 +719,93 @@ nav #menu li a.active {
 }
 #Resume .certification-wrapper .credential .column-30 {
   width: 100%;
+}
+#Resume .certification-wrapper .credential .column-30 p {
+  color: #354555;
+}
+
+@media (min-width: 600px) {
+  #Resume .slick-container .flex img {
+    max-width: 130px;
+    margin-bottom: 1.5em;
+  }
+}
+@media (min-width: 768px) {
+  #Resume .flex .container {
+    width: min(40%, 90rem);
+  }
+  #Resume .flex .technical-certification .container {
+    width: min(80%, 80rem);
+  }
+  #Resume .work-experience .intenship {
+    max-width: 650px;
+  }
+  #Resume .work-experience .intenship .logo-wrapper img {
+    max-width: 250px;
+    margin-bottom: 0;
+  }
+  #Resume .slick-container {
+    margin-top: 1em;
+  }
+  #Resume .slick-container .slick-slider {
+    width: 100%;
+    max-width: 650px;
+  }
+  #Resume .slick-container .flex img {
+    max-width: 120px;
+  }
+  #Resume .certification-wrapper {
+    width: 100%;
+  }
+  #Resume .certification-wrapper .credential {
+    margin-bottom: 0.75em;
+  }
+  #Resume .certification-wrapper .credential .flex {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  #Resume .work-experience .intenship {
+    max-width: 700px;
+  }
+  #Resume .work-experience .intenship .logo-wrapper img {
+    max-width: 100px;
+  }
+  #Resume .slick-container .flex img {
+    max-width: 100px;
+    margin-bottom: 1.5em;
+  }
+  #Resume .certification-wrapper .credential {
+    margin-bottom: 1em;
+  }
+  #Resume .certification-wrapper .credential h6:first-child {
+    font-size: 0.95rem;
+  }
+  #Resume .certification-wrapper .credential h6:last-child {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 1600px) {
+  #Resume .work-experience .intenship .logo-wrapper img {
+    max-width: 120px;
+  }
+  #Resume .slick-container .flex img {
+    max-width: 140px;
+  }
+  #Resume .certification-wrapper .credential h6:first-child {
+    font-size: 0.95rem;
+  }
+  #Resume .certification-wrapper .credential h6:last-child {
+    font-size: 0.75rem;
+  }
+  #Resume .certification-wrapper .credential .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #Resume .certification-wrapper .credential .column-30 {
+    width: 30%;
+  }
+  #Resume .certification-wrapper .credential .column-70 {
+    width: 70%;
+  }
 }/*# sourceMappingURL=main.css.map */

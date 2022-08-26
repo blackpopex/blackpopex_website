@@ -57,7 +57,9 @@ button {
   font-family: $slabo-fontFamily-paragraph-links-button;
   font-weight: $thin-font-weight;
 }
-
+.text-grey {
+  color: $next-primary-color;
+}
 .text-black {
   color: $black-color;
 }
@@ -470,13 +472,16 @@ nav {
     margin-top: 1em;
     .slick-slider {
       width: $Width_100;
+      max-width: 600px;
     }
     .flex {
       flex-direction: row;
       img {
-        width: 22.5%;
-        max-width: 90px;
+        width: 25%;
+        max-width: 80px;
         margin-bottom: 1em;
+        display: block;
+        margin-right: $right_inline-auto;
       }
     }
   }
@@ -486,10 +491,12 @@ nav {
       margin-bottom: 0.75em;
       h6:first-child {
         margin-bottom: 0.2em;
-        font-family: $slabo-fontFamily-paragraph-links-button;
+        font-family: $Inter-fontFamily-h1-h2;
       }
       h6:last-child {
-        margin-bottom: 0.5em;
+        margin-bottom: 0.2em;
+        color: $green-color;
+        font-weight: 400;
       }
       h6 {
         margin-bottom: 0;
@@ -497,6 +504,138 @@ nav {
       }
       .column-30 {
         width: 100%;
+        p {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $mobile) {
+  #Resume {
+    .slick-container {
+      .flex {
+        img {
+          max-width: 130px;
+          margin-bottom: 1.5em;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $tablet) {
+  #Resume {
+    .flex {
+      .container {
+        width: min(40%, 90rem);
+      }
+      .technical-certification .container {
+        width: min(80%, 80rem);
+      }
+    }
+
+    .work-experience {
+      .intenship {
+        max-width: 650px;
+
+        .logo-wrapper img {
+          max-width: 250px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .slick-container {
+      margin-top: 1em;
+      .slick-slider {
+        width: $Width_100;
+        max-width: 650px;
+      }
+      .flex {
+        img {
+          max-width: 120px;
+        }
+      }
+    }
+    .certification-wrapper {
+      width: $Width_100;
+      .credential {
+        margin-bottom: 0.75em;
+        .flex {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  #Resume {
+    .work-experience {
+      .intenship {
+        max-width: 700px;
+
+        .logo-wrapper img {
+          max-width: 100px;
+        }
+      }
+    }
+    .slick-container {
+      .flex {
+        img {
+          max-width: 100px;
+          margin-bottom: 1.5em;
+        }
+      }
+    }
+    .certification-wrapper {
+      .credential {
+        margin-bottom: 1em;
+        h6:first-child {
+          font-size: 0.95rem;
+        }
+        h6:last-child {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $large_desktop) {
+  #Resume {
+    .work-experience {
+      .intenship {
+        .logo-wrapper img {
+          max-width: 120px;
+        }
+      }
+    }
+    .slick-container {
+      .flex {
+        img {
+          max-width: 140px;
+        }
+      }
+    }
+    .certification-wrapper {
+      .credential {
+        h6:first-child {
+          font-size: 0.95rem;
+        }
+        h6:last-child {
+          font-size: 0.75rem;
+        }
+        .flex {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .column-30 {
+          width: 30%;
+        }
+        .column-70 {
+          width: 70%;
+        }
       }
     }
   }
