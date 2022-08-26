@@ -973,5 +973,8 @@ nav #menu li a.active {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../asset/footer/footer.jpg");
+  background-image: url("../asset/footer/bg-img-blackpopex-footer.jpg");
+  background-size: contain;
+  overflow: hidden;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */

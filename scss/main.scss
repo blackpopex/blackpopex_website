@@ -812,5 +812,8 @@ nav {
 //FOOTER
 #footer {
   @include background-image;
-  background-image: url("../asset/footer/footer.jpg");
+  background-image: url("../asset/footer/bg-img-blackpopex-footer.jpg");
+  background-size: contain;
+  overflow: hidden;
+  background-color: red;
 }
