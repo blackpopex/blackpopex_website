@@ -129,7 +129,7 @@ nav {
   z-index: 2;
   min-height: 6vh;
   padding: 0.5em 1em;
-  box-shadow: $next-box-shadow;
+  box-shadow: $next3-box-shadow;
 
   .hamburger-menu {
     cursor: pointer;
@@ -813,7 +813,142 @@ nav {
 #footer {
   @include background-image;
   background-image: url("../asset/footer/bg-img-blackpopex-footer.jpg");
-  background-size: contain;
+  background-size: cover;
   overflow: hidden;
-  background-color: red;
+  padding: 2em 0;
+
+  form {
+    width: $Width_100;
+    max-width: 500px;
+    margin-left: $left_inline-auto;
+    padding: 0.5em 0;
+    .form-wrapper {
+      width: $Width_100;
+      .flex {
+        width: $Width_100;
+      }
+      :first-child.flex {
+        margin-bottom: 0.5em;
+      }
+
+      .column-49 {
+        width: $Width_100;
+        margin-bottom: 0.25em;
+        input[type="text"] {
+          width: $Width_100;
+          font-size: 0.6em;
+          padding: 0.5em 0.5em;
+          font: {
+            family: $slabo-fontFamily-paragraph-links-button;
+            weight: $thin-font-weight;
+          }
+          border: none;
+          outline: 0;
+          box-sizing: border-box;
+          background-color: rgb(0, 0, 0);
+          background-color: rgba(0, 0, 0, 0.5);
+          color: $next-primary-color;
+          box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+        }
+      }
+      textarea,
+      button {
+        width: $Width_100;
+        font-size: 0.6em;
+        padding: 0.5em 0.5em;
+        font-family: $slabo-fontFamily-paragraph-links-button;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $next-primary-color;
+        border: none;
+        resize: none;
+      }
+      textarea {
+        box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+      }
+      textarea:focus,
+      input[type="text"]:focus {
+        border: none;
+        outline: none;
+      }
+      button {
+        border: 1px solid $green-color;
+        width: auto;
+        padding: 0.5em 4em;
+      }
+    }
+  }
+
+  .info-container {
+    .info-wrapper {
+      width: $Width_100;
+      max-width: 500px;
+      margin-left: $left_inline-auto;
+      margin-top: 1em;
+      display: flex;
+      align-items: center;
+
+      .flex {
+        width: 55%;
+        max-width: 250px;
+        margin-left: $left_inline-auto;
+      }
+      .envelope-phone-contact {
+        border-right: 1px solid $next-primary-color;
+      }
+
+      .box {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 220px;
+        margin-left: $left_inline-auto;
+        text-align: left;
+        margin-bottom: 0.5em;
+        .fa {
+          width: 10%;
+          color: $green-color;
+          margin-right: 0.75em;
+        }
+        div,
+        a {
+          width: 90%;
+          color: $white-color;
+          font-weight: $thin-font-weight;
+        }
+        div {
+          p {
+            margin-bottom: 0;
+            line-height: 1.2;
+          }
+        }
+      }
+
+      .social-network-wrapper {
+        width: 50%;
+        max-width: 150px;
+        margin-left: 1em;
+        margin-inline: $inline;
+        a {
+          margin-right: 20px;
+        }
+        .fa {
+          color: $white-color;
+          font-size: 1.3em;
+        }
+      }
+    }
+    .copyright {
+      width: $Width_100;
+      margin-top: 1em;
+      text-align: center;
+      color: white;
+      p a {
+        color: $white-color;
+      }
+      p {
+        line-height: 0.8;
+      }
+    }
+  }
 }
