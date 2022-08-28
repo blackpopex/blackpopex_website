@@ -814,11 +814,18 @@ nav #menu li a.active {
   margin-top: 0.4em;
   position: relative;
 }
-#portfolio .col-60 {
+#portfolio .flex {
+  align-items: flex-start;
+}
+#portfolio .flex .container {
+  width: min(80%, 90rem);
+  margin-inline: auto;
+}
+#portfolio .flex .col-60 {
   position: relative;
   padding: 3em 0;
 }
-#portfolio .col-60 .absolute-project-links {
+#portfolio .flex .col-60 .absolute-project-links {
   position: absolute;
   width: auto;
   left: 0;
@@ -826,37 +833,36 @@ nav #menu li a.active {
   top: 20%;
   flex-direction: row;
 }
-#portfolio .col-60 .absolute-project-links .column-25 {
+#portfolio .flex .col-60 .absolute-project-links .column-25 {
   transition: transform 0.5s ease-in-out;
   transform: scale(1);
 }
-#portfolio .col-60 .absolute-project-links .column-25:hover {
+#portfolio .flex .col-60 .absolute-project-links .column-25:hover {
   transform: scale(1.2);
   z-index: 9999 !important;
 }
-#portfolio .col-60 .position-absolute-2 {
-  margin-top: 6em;
+#portfolio .flex .col-60 .position-absolute-2 {
+  margin-top: 7em;
   max-width: 600px;
-  margin-inline: auto;
 }
-#portfolio .col-60 .position-absolute-2 .about-web-projects {
+#portfolio .flex .col-60 .position-absolute-2 .about-web-projects {
   width: 100%;
 }
-#portfolio .col-60 .position-absolute-2 .technology-used {
+#portfolio .flex .col-60 .position-absolute-2 .technology-used {
   margin-top: 1em;
   width: 100%;
   max-width: 600px;
 }
-#portfolio .col-60 .position-absolute-2 .technology-used h6 {
+#portfolio .flex .col-60 .position-absolute-2 .technology-used h6 {
   margin-bottom: 1em;
 }
-#portfolio .col-60 .position-absolute-2 .technology-used ul.technologies {
+#portfolio .flex .col-60 .position-absolute-2 .technology-used ul.technologies {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   flex-wrap: wrap;
 }
-#portfolio .col-60 .position-absolute-2 .technology-used ul.technologies li {
+#portfolio .flex .col-60 .position-absolute-2 .technology-used ul.technologies li {
   width: auto;
   background-color: #ececec;
   padding: 0.3em 1em;
@@ -864,30 +870,30 @@ nav #menu li a.active {
   margin-bottom: 0.75em;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link {
+#portfolio .flex .col-60 .position-absolute-2 .technology-used ul.external-link {
   width: auto;
   margin-top: 0.5em;
   min-height: 2vh;
   line-height: 2vh;
   padding: 0.25em 0;
 }
-#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link li {
+#portfolio .flex .col-60 .position-absolute-2 .technology-used ul.external-link li {
   display: inline-block;
 }
-#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link li::after {
+#portfolio .flex .col-60 .position-absolute-2 .technology-used ul.external-link li::after {
   content: "|";
   color: #354555;
   padding-inline: 0.5em;
   font-size: inherit;
 }
-#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link li:last-child:after {
+#portfolio .flex .col-60 .position-absolute-2 .technology-used ul.external-link li:last-child:after {
   content: "";
 }
-#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link li:first-child a {
+#portfolio .flex .col-60 .position-absolute-2 .technology-used ul.external-link li:first-child a {
   padding: 0.5em 0.75em;
   text-align: center;
 }
-#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link li:last-child a {
+#portfolio .flex .col-60 .position-absolute-2 .technology-used ul.external-link li:last-child a {
   font-weight: 600;
 }
 #portfolio .default-hidden {
@@ -921,10 +927,10 @@ nav #menu li a.active {
   #portfolio .col-60 {
     width: 60%;
     padding-bottom: 0;
-    margin-top: -8%;
+    margin-top: 0;
   }
   #portfolio .col-60 .position-absolute-2 {
-    margin-top: 10em;
+    margin-top: 50%;
     width: 100%;
     max-width: 700px;
   }
@@ -941,6 +947,7 @@ nav #menu li a.active {
     height: auto;
     z-index: 99999;
     left: 65%;
+    top: 35%;
   }
   #portfolio .col-60 .position-absolute-2 .project-image-container img {
     width: 100%;
@@ -954,21 +961,35 @@ nav #menu li a.active {
     display: block;
   }
 }
-@media (min-width: 1400px) {
-  #portfolio .col-60 {
-    margin-top: -8.5%;
+@media (min-width: 1200px) {
+  #portfolio .col-60 .position-absolute-2 .project-details {
+    width: 70%;
   }
+  #portfolio .col-60 .position-absolute-2 .project-image-container {
+    left: 75%;
+  }
+}
+@media (min-width: 1400px) {
   #portfolio .col-60 .position-absolute-2 .project-details {
     margin-top: 2em;
   }
   #portfolio .col-60 .position-absolute-2 .project-image-container {
     left: 65%;
+    top: 36%;
   }
   #portfolio .col-60 .position-absolute-2 .project-image-container img {
     max-width: 700px;
   }
   #portfolio .blank-column {
     min-height: 1000px;
+  }
+}
+@media (min-width: 1600px) {
+  #portfolio .col-60 .position-absolute-2 .project-details {
+    margin-top: 8em;
+  }
+  #portfolio .col-60 .position-absolute-2 .project-image-container {
+    top: 42%;
   }
 }
 #testimonials {
