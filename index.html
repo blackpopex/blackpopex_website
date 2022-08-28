@@ -517,8 +517,10 @@
       <section id="testimonials">
         <div class="container">
           <div class="testimonials-wrapper">
+            
             <div class="slick-slider-container">
               <!--------------------------slick slider -------------------------------->
+                            <!--testifier one-->
               <div>
                 <div class="flex">
                   <div class="img-wrapper col-30">
@@ -546,6 +548,9 @@
                   </div>
                 </div>
               </div>
+          
+
+
             </div>
           </div>
         </div>
@@ -658,6 +663,23 @@
     <script src="./js/main.js"></script>
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/slick.js"></script>
-    <script src="./js/slick.min.js"></script>
+     <script src="./js/slick.min.js"></script>
+   <script>
+    $(document).ready(function(){
+  $("").slick({
+    dots: true,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 1,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        prevArrow: false,
+        nextArrow: false,
+        pauseOnHover: false,
+        variableWidth: true,
+  });
+});
+   </script>
   </body>
 </html>
