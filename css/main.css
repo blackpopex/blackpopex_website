@@ -1216,9 +1216,15 @@ nav #menu li a.active {
   }
 }
 @media (min-width: 1200px) {
+  #footer {
+    padding-bottom: 1em;
+  }
   #footer .form-container,
 #footer .info-container {
     width: 50%;
+  }
+  #footer form .form-wrapper button {
+    padding: 0.5em 4em;
   }
   #footer .info-container {
     margin-left: 1em;

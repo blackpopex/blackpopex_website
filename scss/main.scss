@@ -1100,9 +1100,18 @@ nav {
 @media (min-width: $laptop) {
   //FOOTER
   #footer {
+    padding-bottom: 1em;
     .form-container,
     .info-container {
       width: 50%;
+    }
+
+    form {
+      .form-wrapper {
+        button {
+          padding: 0.5em 4em;
+        }
+      }
     }
 
     .info-container {
