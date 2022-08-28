@@ -643,6 +643,7 @@ nav {
 //TESTIMONIALS
 #testimonials {
   padding: 0;
+  padding-bottom: 1em;
   margin: 0;
   @include background-image;
   background-image: url("../asset/testimonials-bg-img-icon/testimonials-mobile.jpg");
@@ -658,8 +659,8 @@ nav {
         margin-inline: $inline;
         margin-bottom: 1em;
         img {
-          max-width: 120px;
-          height: 120px;
+          width: 100px;
+          height: 100px;
           margin-inline: $inline;
           border-radius: 50%;
         }
@@ -675,15 +676,17 @@ nav {
         h6.text-navy-blue {
           font-style: italic;
           font-weight: 300;
+          text-align: center;
         }
         .faint-horizontal-line-width-50px {
-          border: 1px solid $next-primary-color;
+          border: 1px solid $primary-color;
           margin: 0.5em 0;
           width: 40%;
           max-width: 200px;
         }
         h6.normal-font-style {
           margin-bottom: 0;
+          text-align: left;
           font: {
             style: normal;
             weight: $next3-bold-font-weight;
@@ -710,7 +713,7 @@ nav {
           margin-inline: $inline;
           margin-bottom: 0;
           img {
-            max-width: 100px;
+            width: 100px;
             height: 100px;
             margin-inline: $left_inline-auto;
             margin-top: 1em;
@@ -721,6 +724,9 @@ nav {
           max-width: 650px;
           iconify-icon {
             padding-right: 0.25em;
+          }
+          h6.text-navy-blue {
+            text-align: left;
           }
 
           .faint-horizontal-line-width-50px {
@@ -735,21 +741,26 @@ nav {
   #testimonials {
     padding: 2.5em 0;
     @include background-image;
-    background-size: cover;
+    background-size: contain;
     .slick-slider-container {
+      max-width: 800px;
+      margin-inline: $inline;
+      margin-bottom: -5%;
       .flex {
         .img-wrapper {
-          width: 20%;
+          width: 10%;
+          margin-inline: $left_inline-auto;
 
           img {
-            max-width: 130px;
-            height: 130px;
+            width: 110px;
+            height: 110px;
             margin-top: 1em;
           }
         }
         .comment {
-          width: 80%;
-          max-width: 900px;
+          width: 90%;
+          max-width: 650px;
+          margin-left: $left_inline-auto;
           iconify-icon {
             padding-right: 0.25em;
           }
@@ -761,23 +772,26 @@ nav {
 
 @media (min-width: $laptop) {
   #testimonials {
-    padding: 2em 0;
+    padding-bottom: 3em;
     @include background-image;
     background-size: contain;
+    background-position: center;
     .slick-slider-container {
-      width: $Width_100;
-      margin-inline: $left_inline-auto;
+      max-width: 900px;
+      margin-inline: $inline;
+      margin-bottom: -5%;
       .flex {
-        img {
-          max-width: 140px;
-          height: 140px;
+        .img-wrapper {
+          img {
+            width: 120px;
+            height: 120px;
+          }
         }
-      }
-      .comment {
-        width: 80%;
-        margin-inline: $right_inline-auto;
-        iconify-icon {
-          padding-right: 0.25em;
+        .comment {
+          max-width: 750px;
+          iconify-icon {
+            font-size: 2.5em;
+          }
         }
       }
     }
@@ -785,24 +799,26 @@ nav {
 }
 @media (min-width: $large_desktop) {
   #testimonials {
-    padding: 2em 0;
-    @include background-image;
-    background-size: contain;
-    height: 500px;
+    padding-bottom: 6em;
     .slick-slider-container {
-      width: $Width_100;
-      margin-inline: $left_inline-auto;
+      max-width: 1050px;
+      margin-inline: $inline;
+      margin-bottom: -5%;
       .flex {
-        img {
-          max-width: 180px;
-          height: 180px;
+        .img-wrapper {
+          img {
+            width: 130px;
+            height: 130px;
+          }
         }
-      }
-      .comment {
-        width: 80%;
-        margin-inline: $left_inline-auto;
-        iconify-icon {
-          padding-right: 0.25em;
+        .comment {
+          max-width: 850px;
+          iconify-icon {
+            font-size: 3em;
+          }
+          h6.main-comment {
+            font-size: 0.8em;
+          }
         }
       }
     }
