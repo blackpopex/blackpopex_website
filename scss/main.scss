@@ -640,6 +640,185 @@ nav {
     }
   }
 }
+
+//PORTFOLIO
+
+#portfolio {
+  padding: 0;
+  margin-top: 0.4em;
+  position: relative;
+  .col-60 {
+    position: relative;
+    padding: 3em 0;
+    .absolute-project-links {
+      position: absolute;
+      width: auto;
+      left: 0;
+      right: 0;
+      top: 20%;
+      flex-direction: row;
+      .column-25 {
+        transition: transform 0.5s ease-in-out;
+        transform: scale(1);
+      }
+      .column-25:hover {
+        transform: scale(1.2);
+        z-index: 9999 !important;
+      }
+    }
+    .position-absolute-2 {
+      margin-top: 6em;
+      max-width: 600px;
+      margin-inline: $inline;
+      .about-web-projects {
+        width: $Width_100;
+      }
+      .technology-used {
+        margin-top: 1em;
+        width: $Width_100;
+        max-width: 600px;
+        h6 {
+          margin-bottom: 1em;
+        }
+        ul.technologies {
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          flex-wrap: wrap;
+          li {
+            width: auto;
+            background-color: $next-primary-color;
+            padding: 0.3em 1em;
+            margin-right: 0.5em;
+            margin-bottom: 0.75em;
+            box-shadow: $next-box-shadow;
+          }
+        }
+        ul.external-link {
+          width: auto;
+          margin-top: 0.5em;
+          min-height: 2vh;
+          line-height: 2vh;
+          padding: 0.25em 0;
+          li {
+            display: inline-block;
+          }
+          li::after {
+            content: "|";
+            color: $primary-color;
+            padding-inline: 0.5em;
+            font-size: inherit;
+          }
+          li:last-child:after {
+            content: "";
+          }
+          li:first-child a {
+            padding: 0.5em 0.75em;
+            text-align: center;
+          }
+          li:last-child a {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .default-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  #portfolio {
+    .tablet-flex {
+      flex-direction: column;
+    }
+    .col-60 {
+      width: 100%;
+
+      .position-absolute-2 {
+        margin-top: 9em;
+        max-width: 700px;
+        margin-inline: $left_inline-auto;
+        .about-web-projects,
+        .project-details {
+          width: $Width_100;
+        }
+      }
+    }
+    .default-hidden {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $landScape_tablet) {
+  #portfolio {
+    .tablet-flex {
+      flex-direction: row;
+    }
+    .col-60 {
+      width: 60%;
+      padding-bottom: 0;
+      margin-top: -8%;
+
+      .position-absolute-2 {
+        margin-top: 10em;
+        width: 100%;
+        max-width: 700px;
+        .about-web-projects,
+        .project-details {
+          width: $Width_100;
+        }
+        .project-details {
+          width: 60%;
+        }
+        .project-image-container {
+          position: absolute;
+          width: 100%;
+          height: auto;
+          z-index: 99999;
+          left: 65%;
+          img {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+          }
+        }
+      }
+    }
+    .blank-column {
+      min-height: 850px;
+    }
+
+    .default-hidden {
+      display: block;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  #portfolio {
+    .col-60 {
+      margin-top: -8.5%;
+
+      .position-absolute-2 {
+        .project-details {
+          margin-top: 2em;
+        }
+        .project-image-container {
+          left: 65%;
+          img {
+            max-width: 700px;
+          }
+        }
+      }
+    }
+    .blank-column {
+      min-height: 1000px;
+    }
+  }
+}
+
 //TESTIMONIALS
 #testimonials {
   padding: 0;

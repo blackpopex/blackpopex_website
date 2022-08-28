@@ -809,6 +809,168 @@ nav #menu li a.active {
     width: 70%;
   }
 }
+#portfolio {
+  padding: 0;
+  margin-top: 0.4em;
+  position: relative;
+}
+#portfolio .col-60 {
+  position: relative;
+  padding: 3em 0;
+}
+#portfolio .col-60 .absolute-project-links {
+  position: absolute;
+  width: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+  flex-direction: row;
+}
+#portfolio .col-60 .absolute-project-links .column-25 {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1);
+}
+#portfolio .col-60 .absolute-project-links .column-25:hover {
+  transform: scale(1.2);
+  z-index: 9999 !important;
+}
+#portfolio .col-60 .position-absolute-2 {
+  margin-top: 6em;
+  max-width: 600px;
+  margin-inline: auto;
+}
+#portfolio .col-60 .position-absolute-2 .about-web-projects {
+  width: 100%;
+}
+#portfolio .col-60 .position-absolute-2 .technology-used {
+  margin-top: 1em;
+  width: 100%;
+  max-width: 600px;
+}
+#portfolio .col-60 .position-absolute-2 .technology-used h6 {
+  margin-bottom: 1em;
+}
+#portfolio .col-60 .position-absolute-2 .technology-used ul.technologies {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+#portfolio .col-60 .position-absolute-2 .technology-used ul.technologies li {
+  width: auto;
+  background-color: #ececec;
+  padding: 0.3em 1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.75em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link {
+  width: auto;
+  margin-top: 0.5em;
+  min-height: 2vh;
+  line-height: 2vh;
+  padding: 0.25em 0;
+}
+#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link li {
+  display: inline-block;
+}
+#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link li::after {
+  content: "|";
+  color: #354555;
+  padding-inline: 0.5em;
+  font-size: inherit;
+}
+#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link li:last-child:after {
+  content: "";
+}
+#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link li:first-child a {
+  padding: 0.5em 0.75em;
+  text-align: center;
+}
+#portfolio .col-60 .position-absolute-2 .technology-used ul.external-link li:last-child a {
+  font-weight: 600;
+}
+#portfolio .default-hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #portfolio .tablet-flex {
+    flex-direction: column;
+  }
+  #portfolio .col-60 {
+    width: 100%;
+  }
+  #portfolio .col-60 .position-absolute-2 {
+    margin-top: 9em;
+    max-width: 700px;
+    margin-inline: 0 auto;
+  }
+  #portfolio .col-60 .position-absolute-2 .about-web-projects,
+#portfolio .col-60 .position-absolute-2 .project-details {
+    width: 100%;
+  }
+  #portfolio .default-hidden {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #portfolio .tablet-flex {
+    flex-direction: row;
+  }
+  #portfolio .col-60 {
+    width: 60%;
+    padding-bottom: 0;
+    margin-top: -8%;
+  }
+  #portfolio .col-60 .position-absolute-2 {
+    margin-top: 10em;
+    width: 100%;
+    max-width: 700px;
+  }
+  #portfolio .col-60 .position-absolute-2 .about-web-projects,
+#portfolio .col-60 .position-absolute-2 .project-details {
+    width: 100%;
+  }
+  #portfolio .col-60 .position-absolute-2 .project-details {
+    width: 60%;
+  }
+  #portfolio .col-60 .position-absolute-2 .project-image-container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 99999;
+    left: 65%;
+  }
+  #portfolio .col-60 .position-absolute-2 .project-image-container img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+  }
+  #portfolio .blank-column {
+    min-height: 850px;
+  }
+  #portfolio .default-hidden {
+    display: block;
+  }
+}
+@media (min-width: 1400px) {
+  #portfolio .col-60 {
+    margin-top: -8.5%;
+  }
+  #portfolio .col-60 .position-absolute-2 .project-details {
+    margin-top: 2em;
+  }
+  #portfolio .col-60 .position-absolute-2 .project-image-container {
+    left: 65%;
+  }
+  #portfolio .col-60 .position-absolute-2 .project-image-container img {
+    max-width: 700px;
+  }
+  #portfolio .blank-column {
+    min-height: 1000px;
+  }
+}
 #testimonials {
   padding: 0;
   padding-bottom: 1em;

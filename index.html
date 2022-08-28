@@ -423,13 +423,12 @@
       <section
         id="portfolio"
         class="position-relative"
-        style="min-height: 500px"
       >
-        <div class="flex container">
+        <div class="flex tablet-flex">
           <div class="col-60 bg-white">
-            <div>
+            <div class="container">
               <h3 class="text-green">Portfolio</h3>
-              <div class="flex">
+              <div class="flex absolute-project-links">
                 <div class="column-25">
                   <a href="#/">
                     <img
@@ -461,7 +460,7 @@
                 </div>
               </div>
 
-              <div class="position-absolute">
+              <div class="position-absolute-2">
                 <div class="about-web-projects">
                   <!--Web project 1-->
                   <div class="webproject1 flex">
@@ -476,7 +475,7 @@
                       </p>
                       <div class="technology-used">
                         <h6 class="text-navy-blue">Technologies Used</h6>
-                        <ul>
+                        <ul class="technologies">
                           <li>HTML</li>
                           <li>CSS</li>
                           <li>Javascript</li>
@@ -492,15 +491,15 @@
 
                         <ul class="external-link inline-block">
                           <li>
-                            <a href="#/" class="btn bg-green text-white"
+                            <a href="#/" target="_blank"  class="btn bg-green text-white"
                               >Visit Website</a
                             >
                           </li>
-                          <li><a href="#/" class="text-green">Github</a></li>
+                          <li><a href="#/" target="_blank" class="text-green">Github</a></li>
                         </ul>
                       </div>
                     </div>
-                    <div class="project-image-container col-60">
+                    <div class="project-image-container col-60 default-hidden">
                       <img
                         src="./asset/portofolio-thumbnail/big-thumbnail/photo1.jpg"
                         alt="project1"
@@ -511,7 +510,7 @@
               </div>
             </div>
           </div>
-          <div class="col-40 bg-grey" style="background-color: #f2f2f2"></div>
+          <div class="col-40 default-hidden blank-column bg-grey"></div>
         </div>
       </section>
 
