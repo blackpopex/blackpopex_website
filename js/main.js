@@ -34,14 +34,17 @@ function topFunction() {
 }
 
 $(document).ready(function () {
-  var scrollLink = $('.scroll');
+  var scrollLink = $(".scroll");
 
   //Smooth scrolling
   scrollLink.click(function (e) {
     e.preventDefault();
-    $('body,html').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 1000);
+    $("body,html").animate(
+      {
+        scrollTop: $(this.hash).offset().top,
+      },
+      1000
+    );
   });
   // active link switching
   $(window).scroll(function () {
@@ -51,9 +54,42 @@ $(document).ready(function () {
       var sectionOffset = $(this.hash).offset().top - 200;
 
       if (sectionOffset <= scrollbarLocation) {
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
+        $(this).parent().addClass("active");
+        $(this).parent().siblings().removeClass("active");
       }
-    })
-  })
-})
+    });
+  });
+});
+
+//Angular.js application for switching portf0lio tabs
+var app = angular.module("mySwitchApplication", []);
+app.controller("myCtrl", function ($scope) {
+  $scope.twins = true;
+  $scope.westend = false;
+  $scope.duke = false;
+  $scope.popex = false;
+  $scope.twinsHospital = function () {
+    $scope.twins = true;
+    $scope.westend = false;
+    $scope.duke = false;
+    $scope.popex = false;
+  };
+  $scope.westendHospital = function () {
+    $scope.twins = false;
+    $scope.westend = true;
+    $scope.duke = false;
+    $scope.popex = false;
+  };
+  $scope.dukeMemorialHospital = function () {
+    $scope.twins = false;
+    $scope.westend = false;
+    $scope.duke = true;
+    $scope.popex = false;
+  };
+  $scope.blackPopex = function () {
+    $scope.twins = false;
+    $scope.westend = false;
+    $scope.duke = false;
+    $scope.popex = true;
+  };
+});
