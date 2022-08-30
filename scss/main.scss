@@ -671,8 +671,9 @@ nav {
           transform: scale(1);
         }
         .column-25:hover {
-          transform: scale(1.2);
+          transform: scale(1.1);
           z-index: 9999 !important;
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
         }
       }
       .position-absolute-2 {
@@ -963,10 +964,15 @@ nav {
       max-width: 800px;
       margin-inline: $inline;
       margin-bottom: -5%;
+      padding-inline: 0;
       .flex {
+        width: $Width_100;
+        max-width: 800px;
+        margin-inline: 0;
+
         .img-wrapper {
-          width: 10%;
-          margin-inline: $left_inline-auto;
+          width: 15%;
+          margin-inline: auto 0;
 
           img {
             width: 110px;
@@ -975,9 +981,10 @@ nav {
           }
         }
         .comment {
-          width: 90%;
+          width: 85%;
           max-width: 650px;
-          margin-left: $left_inline-auto;
+          margin-left: auto;
+          padding-left: 1em;
           iconify-icon {
             padding-right: 0.25em;
           }
@@ -1014,6 +1021,7 @@ nav {
     }
   }
 }
+
 @media (min-width: $large_desktop) {
   #testimonials {
     padding-bottom: 6em;
@@ -1022,6 +1030,7 @@ nav {
       margin-inline: $inline;
       margin-bottom: -5%;
       .flex {
+        max-width: 1050px;
         .img-wrapper {
           img {
             width: 130px;
@@ -1029,7 +1038,8 @@ nav {
           }
         }
         .comment {
-          max-width: 850px;
+          max-width: 950px;
+          margin-left: auto;
           iconify-icon {
             font-size: 3em;
           }

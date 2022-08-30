@@ -889,8 +889,9 @@ nav #menu li a.active {
   transform: scale(1);
 }
 #portfolio .flex .col-60 .absolute-project-links .column-25:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   z-index: 9999 !important;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 #portfolio .flex .col-60 .position-absolute-2 {
   margin-top: 7em;
@@ -1147,10 +1148,16 @@ nav #menu li a.active {
     max-width: 800px;
     margin-inline: auto;
     margin-bottom: -5%;
+    padding-inline: 0;
+  }
+  #testimonials .slick-slider-container .flex {
+    width: 100%;
+    max-width: 800px;
+    margin-inline: 0;
   }
   #testimonials .slick-slider-container .flex .img-wrapper {
-    width: 10%;
-    margin-inline: 0 auto;
+    width: 15%;
+    margin-inline: auto 0;
   }
   #testimonials .slick-slider-container .flex .img-wrapper img {
     width: 110px;
@@ -1158,9 +1165,10 @@ nav #menu li a.active {
     margin-top: 1em;
   }
   #testimonials .slick-slider-container .flex .comment {
-    width: 90%;
+    width: 85%;
     max-width: 650px;
-    margin-left: 0 auto;
+    margin-left: auto;
+    padding-left: 1em;
   }
   #testimonials .slick-slider-container .flex .comment iconify-icon {
     padding-right: 0.25em;
@@ -1200,12 +1208,16 @@ nav #menu li a.active {
     margin-inline: auto;
     margin-bottom: -5%;
   }
+  #testimonials .slick-slider-container .flex {
+    max-width: 1050px;
+  }
   #testimonials .slick-slider-container .flex .img-wrapper img {
     width: 130px;
     height: 130px;
   }
   #testimonials .slick-slider-container .flex .comment {
-    max-width: 850px;
+    max-width: 950px;
+    margin-left: auto;
   }
   #testimonials .slick-slider-container .flex .comment iconify-icon {
     font-size: 3em;
