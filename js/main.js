@@ -59,6 +59,12 @@ $(document).ready(function () {
       }
     });
   });
+
+  //HIDE SIDEBAR WHENEVER SIDEBAR LINK IS CLICKED
+  $("#menu .scroll").click(function () {
+    $("#navbar_links").removeClass("increase-width");
+    $("#Navbar_toggle").removeClass("change");
+  });
 });
 
 //Angular.js application for switching portf0lio tabs
