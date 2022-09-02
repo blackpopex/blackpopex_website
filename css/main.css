@@ -672,11 +672,43 @@ nav #menu li a.active {
 }
 
 @media (min-width: 768px) {
+  #about_me .flex {
+    flex-direction: column;
+  }
+  #about_me .flex .col-20 {
+    width: 100%;
+  }
   #about_me .flex .col-20 img {
-    margin: 0;
+    margin: 2em auto;
+    max-width: 200px;
   }
   #about_me .flex .col-80 {
+    width: 100%;
     padding: 3em 0;
+  }
+}
+@media (min-width: 1200px) {
+  #about_me .flex {
+    flex-direction: row;
+  }
+  #about_me .flex .col-20 {
+    width: 25%;
+  }
+  #about_me .flex .col-20 img {
+    margin: 0;
+    max-width: auto;
+  }
+  #about_me .flex .col-80 {
+    width: 75%;
+    padding: 3em 0;
+  }
+}
+@media (min-width: 1400px) {
+  #about_me .flex .col-20 {
+    width: 20%;
+  }
+  #about_me .flex .col-80 {
+    width: 80%;
   }
 }
 #Resume {
