@@ -27,6 +27,17 @@ function scrollFunction() {
     topBtnText.style.display = "none";
   }
 }
+
+//Technology carousel control
+var counter = 1;
+setInterval(function () {
+  document.getElementById("radio" + counter).checked = true;
+  counter++;
+  if (counter > 2) {
+    counter = 1;
+  }
+}, 5000);
+
 //This function takes the webpage back to the top
 function topFunction() {
   document.body.scrollTop = 0;
