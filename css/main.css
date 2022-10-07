@@ -96,7 +96,9 @@ p,
 .circular-dots li {
   margin-bottom: 0.5em;
 }
-
+.circular-dots li::before {
+  font-size: 1.4rem;
+} 
 .circular-dots li {
   margin-left: 0.5rem;
 }
@@ -104,6 +106,15 @@ p,
 ul {
   list-style-type: none;
 }
+
+.circular-dots li::before {
+  font-size: 1.2rem;
+  color: black;
+  content: ".";
+  margin-right: 0.25em;
+  display: inline-block;
+  line-height: 0;
+} 
 
 @media screen and (min-width: 768px) {
   h1 {
@@ -124,9 +135,7 @@ ul {
   .circular-dots li::before {
     font-size: 1.4rem;
   }
-  .circular-dots li::before {
-    font-size: 2rem;
-  }
+ 
 }
 @media screen and (min-width: 1200px) {
   h1 {
