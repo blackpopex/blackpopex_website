@@ -710,7 +710,7 @@ nav {
         width: auto;
         left: 0;
         right: 0;
-        top: 20%;
+        top: 150px;
         flex-direction: row;
         .column-25 {
           transition: transform 0.5s ease-in-out;
@@ -790,9 +790,13 @@ nav {
     .tablet-flex {
       flex-direction: column;
     }
+    .flex {
     .col-60 {
       width: 100%;
 
+      .absolute-project-links {
+        top: 160px;
+      }
       .position-absolute-2 {
         margin-top: 9em;
         max-width: 700px;
@@ -808,19 +812,21 @@ nav {
     }
   }
 }
+}
 
 @media (min-width: $landScape_tablet) {
   #portfolio {
     .tablet-flex {
       flex-direction: row;
     }
+    .flex {
     .col-60 {
       width: 60%;
       padding-bottom: 0;
       margin-top: 0;
 
       .position-absolute-2 {
-        margin-top: 50%;
+        margin-top: 40%;
         width: 100%;
         max-width: 700px;
         .about-web-projects,
@@ -853,6 +859,7 @@ nav {
     }
   }
 }
+}
 
 @media (min-width: $laptop) {
   #portfolio {
@@ -868,12 +875,15 @@ nav {
     }
   }
 }
+
 @media (min-width: 1400px) {
   #portfolio {
     .col-60 {
       .position-absolute-2 {
         .project-details {
+          /**
           margin-top: 2em;
+          **/
         }
         .project-image-container {
           left: 65%;
@@ -894,10 +904,23 @@ nav {
     .col-60 {
       .position-absolute-2 {
         .project-details {
+          /**
           margin-top: 8em;
+          **/
         }
         .project-image-container {
           top: 42%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1800px) {
+  #portfolio {
+    .col-60 {
+      .position-absolute-2 {
+        .project-details {
+          margin-top: -2em;
         }
       }
     }
