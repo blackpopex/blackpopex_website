@@ -191,10 +191,6 @@ button {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -272,10 +268,6 @@ button {
   }
 }
 .back-top-btn-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -1059,9 +1051,9 @@ nav #menu li a.active {
   }
   #portfolio .flex .col-60 .position-absolute-2 .project-image-container img {
     width: 100%;
-    max-width: 550px;
+    max-width: 600px;
     height: auto;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: -100px;
   }
   #portfolio .flex .default-hidden {
     display: block;
@@ -1069,38 +1061,44 @@ nav #menu li a.active {
   }
 }
 @media (min-width: 1200px) {
-  #portfolio .col-60 .position-absolute-2 .project-details {
+  #portfolio .flex .col-60 .position-absolute-2 .project-details {
     width: 70%;
   }
-  #portfolio .col-60 .position-absolute-2 .project-image-container {
-    left: 75%;
+  #portfolio .flex .col-60 .position-absolute-2 .project-image-container {
+    left: 60%;
+  }
+  #portfolio .flex .col-60 .position-absolute-2 .project-image-container img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin-top: -100px;
   }
 }
 @media (min-width: 1400px) {
-  #portfolio .col-60 .position-absolute-2 .project-details {
-    /**
-    margin-top: 2em;
-    **/
-  }
-  #portfolio .col-60 .position-absolute-2 .project-image-container {
+  #portfolio .flex .col-60 .position-absolute-2 .project-image-container {
     left: 65%;
-    top: 36%;
+    top: 5%;
   }
-  #portfolio .col-60 .position-absolute-2 .project-image-container img {
-    max-width: 700px;
+  #portfolio .flex .col-60 .position-absolute-2 .project-image-container img {
+    max-width: 6000px;
+    margin-top: 175px;
   }
-  #portfolio .default-hidden {
+  #portfolio .flex .default-hidden {
     min-height: 1000px;
   }
 }
 @media (min-width: 1600px) {
-  #portfolio .col-60 .position-absolute-2 .project-details {
+  #portfolio .flex .col-60 .position-absolute-2 .project-details {
     /**
     margin-top: 8em;
     **/
   }
-  #portfolio .col-60 .position-absolute-2 .project-image-container {
+  #portfolio .flex .col-60 .position-absolute-2 .project-image-container {
     top: 42%;
+  }
+  #portfolio .flex .col-60 .position-absolute-2 .project-image-container img {
+    max-width: 7000px;
+    margin-top: -200px;
   }
 }
 @media (min-width: 1800px) {
