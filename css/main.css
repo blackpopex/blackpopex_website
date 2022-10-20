@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&family=Mochiy+Pop+One&family=Poppins&family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 *,
 *::before,
 *::after {
@@ -930,14 +931,60 @@ nav #menu li a.active {
   flex-direction: row;
 }
 #portfolio .flex .col-60 .absolute-project-links .column-25 {
+  width: 25%;
+  margin-left: 2px;
   transition: transform 0.5s ease-in-out;
   transform: scale(1);
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+#portfolio .flex .col-60 .absolute-project-links .column-25 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+#portfolio .flex .col-60 .absolute-project-links .column-25 a div {
+  line-height: 0;
+  width: auto;
+}
+#portfolio .flex .col-60 .absolute-project-links .column-25 a div h2 {
+  margin-bottom: 0.5em;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2em;
+  font-family: "Inter", sans-serif;
+}
+#portfolio .flex .col-60 .absolute-project-links .column-25 a div h6 {
+  color: #ffffff;
+  font-size: 1em;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+#portfolio .flex .col-60 .absolute-project-links .column-25 a div .grey {
+  color: #354555;
+}
+#portfolio .flex .col-60 .absolute-project-links .column-25:first-child {
+  margin-left: 0;
 }
 #portfolio .flex .col-60 .absolute-project-links .column-25:hover {
   transform: scale(1.1);
   z-index: 9999 !important;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#portfolio .flex .col-60 .absolute-project-links .purple-background {
+  background-color: #38357c;
+}
+#portfolio .flex .col-60 .absolute-project-links .white-background {
+  background-color: #ffffff;
+}
+#portfolio .flex .col-60 .absolute-project-links .grey-background {
+  background-color: #354555;
+}
+#portfolio .flex .col-60 .absolute-project-links .duke-background {
+  background-color: #214e71;
 }
 #portfolio .flex .col-60 .position-absolute-2 {
   margin-top: 7em;
@@ -1008,6 +1055,18 @@ nav #menu li a.active {
   #portfolio .flex .col-60 .absolute-project-links {
     top: 160px;
   }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 {
+    padding: 0.5em 0;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div h2 {
+    font-size: 2.2em;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div h6 {
+    font-size: 1.3em;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div .grey {
+    color: #354555;
+  }
   #portfolio .flex .col-60 .position-absolute-2 {
     margin-top: 9em;
     max-width: 700px;
@@ -1029,6 +1088,15 @@ nav #menu li a.active {
     width: 60%;
     padding-bottom: 0;
     margin-top: 0;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 {
+    padding: 0.25em 0;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div h2 {
+    font-size: 1.8em;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div h6 {
+    font-size: 1.2em;
   }
   #portfolio .flex .col-60 .position-absolute-2 {
     margin-top: 40%;
@@ -1062,6 +1130,18 @@ nav #menu li a.active {
   }
 }
 @media (min-width: 1200px) {
+  #portfolio .flex .col-60 .absolute-project-links .column-25 {
+    padding: 0.35em 0;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div h2 {
+    font-size: 1.9em;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div h6 {
+    font-size: 1.25em;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div .grey {
+    color: #354555;
+  }
   #portfolio .flex .col-60 .position-absolute-2 .project-details {
     width: 70%;
   }
@@ -1088,6 +1168,18 @@ nav #menu li a.active {
   }
 }
 @media (min-width: 1600px) {
+  #portfolio .flex .col-60 .absolute-project-links .column-25 {
+    padding: 1em 0;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div h2 {
+    font-size: 2.2em;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div h6 {
+    font-size: 1.25em;
+  }
+  #portfolio .flex .col-60 .absolute-project-links .column-25 a div .grey {
+    color: #354555;
+  }
   #portfolio .flex .col-60 .position-absolute-2 .project-details {
     /**
     margin-top: 8em;
@@ -1445,7 +1537,6 @@ nav #menu li a.active {
 }
 @media (min-width: 768px) {
   #footer {
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../asset/footer/footer.jpg");

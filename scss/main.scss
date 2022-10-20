@@ -713,14 +713,64 @@ nav {
         top: 150px;
         flex-direction: row;
         .column-25 {
+          width: 25%;
+          margin-left: 2px;
           transition: transform 0.5s ease-in-out;
           transform: scale(1);
           box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+          overflow-y: hidden;
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            div {
+              line-height: 0;
+              width: auto;
+              h2 {
+                margin-bottom: 0.5em;
+                color: $white-color;
+                font: {
+                  weight: 600;
+                  size: 2em;
+                  family: $inter-fontFamily;
+                }
+              }
+              h6 {
+                color: $white-color;
+                font: {
+                  size: 1em;
+                  family: $inter-fontFamily;
+                  weight: 500;
+                }
+              }
+              .grey {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+        .column-25:first-child {
+          margin-left: 0;
         }
         .column-25:hover {
           transform: scale(1.1);
           z-index: 9999 !important;
           box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        .purple-background {
+          background-color: $purple-color;
+        }
+        .white-background {
+          background-color: $white-color;
+        }
+        .grey-background {
+          background-color: $primary-color;
+        }
+        .duke-background {
+          background-color: $duke-color;
         }
       }
       .position-absolute-2 {
@@ -797,6 +847,26 @@ nav {
 
         .absolute-project-links {
           top: 160px;
+          .column-25 {
+            padding: 0.5em 0;
+            a {
+              div {
+                h2 {
+                  font: {
+                    size: 2.2em;
+                  }
+                }
+                h6 {
+                  font: {
+                    size: 1.3em;
+                  }
+                }
+                .grey {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
         }
         .position-absolute-2 {
           margin-top: 9em;
@@ -825,6 +895,25 @@ nav {
         width: 60%;
         padding-bottom: 0;
         margin-top: 0;
+        .absolute-project-links {
+          .column-25 {
+            padding: 0.25em 0;
+            a {
+              div {
+                h2 {
+                  font: {
+                    size: 1.8em;
+                  }
+                }
+                h6 {
+                  font: {
+                    size: 1.2em;
+                  }
+                }
+              }
+            }
+          }
+        }
 
         .position-absolute-2 {
           margin-top: 40%;
@@ -866,6 +955,28 @@ nav {
   #portfolio {
     .flex {
       .col-60 {
+        .absolute-project-links {
+          .column-25 {
+            padding: 0.35em 0;
+            a {
+              div {
+                h2 {
+                  font: {
+                    size: 1.9em;
+                  }
+                }
+                h6 {
+                  font: {
+                    size: 1.25em;
+                  }
+                }
+                .grey {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
         .position-absolute-2 {
           .project-details {
             width: 70%;
@@ -909,6 +1020,28 @@ nav {
   #portfolio {
     .flex {
       .col-60 {
+        .absolute-project-links {
+          .column-25 {
+            padding: 1em 0;
+            a {
+              div {
+                h2 {
+                  font: {
+                    size: 2.2em;
+                  }
+                }
+                h6 {
+                  font: {
+                    size: 1.25em;
+                  }
+                }
+                .grey {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
         .position-absolute-2 {
           .project-details {
             /**
@@ -1310,7 +1443,8 @@ nav {
 @media (min-width: $tablet) {
   //FOOTER
   #footer {
-    @include background-image;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url("../asset/footer/footer.jpg");
     overflow: hidden;
     padding: 2em 0;
